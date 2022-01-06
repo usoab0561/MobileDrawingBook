@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/baseline_person_24"
+            android:fontFamily="@font/a"
+            android:title="@string/text1" />
+    <!--
+        <item
+            android:id="@+id/nav_slideshow2"
+            android:icon="@drawable/baseline_bookmark_24"
+            android:fontFamily="@font/a"
+            android:title="@string/text2" />
+    -->
+        <item
+            android:id="@+id/nav_slideshow2"
+            android:icon="@drawable/baseline_library_books_24"
+            android:fontFamily="@font/a"
+            android:title="@string/text3" />
+        <!--
+        <item
+
+            android:icon="@drawable/baseline_edit_24"
+            android:fontFamily="@font/a"
+            android:title="@string/text4" />
+            -->
+    </group>
+</menu>

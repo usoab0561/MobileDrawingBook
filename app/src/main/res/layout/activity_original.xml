@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".Edit"
+    >
+    <include layout="@layout/toolbar_bold"></include>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:padding="50dp">
+
+        <ImageView
+            android:id="@+id/basic_img"
+            android:layout_width="327dp"
+            android:layout_height="211dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="100dp"
+            android:baselineAligned="false"
+            android:contentDescription="@string/basicimg"
+            android:src="@drawable/basic_img" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:layout_below="@+id/basic_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:scrollbars="vertical"
+            android:text=" 늑대를 잡아먹어버렸어요"
+            android:fontFamily="@font/a"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/previous_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:text="이전"
+            android:textSize="17dp"/>
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="다음"
+            android:textSize="17dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
